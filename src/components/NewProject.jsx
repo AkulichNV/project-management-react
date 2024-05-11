@@ -19,7 +19,7 @@ export default function NewProject({onAdd, onCancel}) {
             enteredDueDate.trim() === ''
         ) {
             modal.current.open();
-            return
+            return;
         }
 
         onAdd({
